@@ -7,7 +7,7 @@ import com.zapcloudstudios.enderflight.player.PlayerData;
 
 public class PlayerClientData extends PlayerData
 {
-	public boolean isClientFlying(EntityClientPlayerMP player)
+	public boolean isClientGhost(EntityClientPlayerMP player)
 	{
 		return false;
 	}
