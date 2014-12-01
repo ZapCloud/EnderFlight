@@ -190,17 +190,20 @@ public abstract class EntityEnderFlightProjectile extends Entity implements IPro
 	@Override
 	protected void entityInit()
 	{
+
 	}
 
 	@Override
 	protected void readEntityFromNBT(NBTTagCompound nbt)
 	{
+		super.readFromNBT(nbt);
 		this.flightTicks = nbt.getInteger("FlightTicks");
 	}
 
 	@Override
 	protected void writeEntityToNBT(NBTTagCompound nbt)
 	{
+		super.writeToNBT(nbt);
 		nbt.setInteger("FlightTicks", this.flightTicks);
 	}
 }

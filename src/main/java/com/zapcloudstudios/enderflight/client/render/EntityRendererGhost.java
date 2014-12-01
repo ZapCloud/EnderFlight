@@ -12,7 +12,6 @@ import static net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType
 import static net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType.PORTAL;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.EntityRenderer;
-import net.minecraft.client.resources.IResourceManager;
 import net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType;
 
 import com.google.common.collect.ImmutableSet;
@@ -28,9 +27,9 @@ public class EntityRendererGhost extends EntityRenderer
 
 	private Minecraft mc;
 
-	public EntityRendererGhost(Minecraft minecraft, IResourceManager p_i45076_2_)
+	public EntityRendererGhost(Minecraft minecraft)
 	{
-		super(minecraft, p_i45076_2_);
+		super(minecraft, minecraft.getResourceManager());
 		this.mc = minecraft;
 	}
 
