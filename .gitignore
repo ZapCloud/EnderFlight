@@ -1,0 +1,27 @@
+*.class
+*.txt
+*.log
+*.pdn
+
+## gradle
+/.gradle/
+/build/
+/eclipse/
+gradle/
+gradlew
+gradlew.bat
+
+## eclipse
+/.settings
+/.metadata
+/.classpath
+/.project
+/bin
+
+## minecraft
+/config/
+/mods/
+/saves/
+/logs/
+/crash-reports/
+/screenshots/
